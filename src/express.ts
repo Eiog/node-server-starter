@@ -8,7 +8,7 @@ const app = express()
 app.use(express.json())
 const server = createServer(app)
 const router = Router()
-router.get('/', (req, res) => {
+router.get('/express', (req, res) => {
   res.send('Express Is Started')
 })
 app.use(router)

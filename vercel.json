@@ -16,20 +16,20 @@
   ],
   "routes": [
     {
-      "src": "/node/",
+      "src": "/node",
       "dest": "src/node.ts"
     },
     {
-      "src": "/h3/",
+      "src": "/h3",
       "dest": "src/h3.ts"
     },
     {
-      "src": "/express/",
+      "src": "/express",
       "dest": "src/express.ts"
     },
     {
       "src": "/(.*)",
-      "dest": "/node/"
+      "dest": "/node"
     }
   ]
 }

@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 5632
 const app = createApp()
 const server = createServer(toNodeListener(app))
 const router = createRouter()
-router.get('/', eventHandler(() => {
+router.get('/h3', eventHandler(() => {
   return 'H3 Is Started'
 }))
 app.use(router)
