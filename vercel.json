@@ -27,6 +27,10 @@
     {
       "src": "/express",
       "dest": "src/express.ts"
+    },
+    {
+      "src": "/api/:path*",
+      "dest": "api/:path*.ts"
     }
   ]
 }
