@@ -26,10 +26,6 @@
     {
       "src": "/express",
       "dest": "src/express.ts"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "src/node.ts"
     }
   ]
 }
