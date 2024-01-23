@@ -27,10 +27,12 @@
     {
       "src": "/express",
       "dest": "src/express.ts"
-    },
+    }
+  ],
+  "rewrites": [
     {
-      "src": "/api/:path*",
-      "dest": "api/:path*.ts"
+      "source": "/api/:path*",
+      "destination": "/api/:path*.ts"
     }
   ]
 }
