@@ -1,8 +1,8 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 // @ts-nocheck
 import { Router } from 'express'
-import vercel from './vercel.ts'
+import hello from './hello.ts'
 
 const router = Router()
-router.all('/vercel', vercel)
+router.all('/hello', hello)
 export default router
