@@ -29,8 +29,8 @@
       "dest": "src/express.ts"
     },
     {
-      "src": "/api/(.*)",
-      "dest": "api/(.*)"
+      "src": "/api/*",
+      "dest": "api/*.ts"
     }
   ]
 }
