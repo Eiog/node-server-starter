@@ -1,5 +1,6 @@
 import { readdirSync, statSync, writeFileSync } from 'node:fs'
 import { resolve } from 'node:path'
+import process from 'node:process'
 
 const routesPath = readdirSync(resolve(process.cwd(), './api'))
   .filter(f => f.endsWith('.ts') && !f.startsWith('_') && statSync(`${resolve(process.cwd(), './api')}/${f}`).isFile())
@@ -7,7 +8,7 @@ const routesPath = readdirSync(resolve(process.cwd(), './api'))
 const routesImports = routesPath.map(m => `import ${m.replace('.ts', '')} from './${m}'`).join('\n')
 const routesFunc = routesPath.map(m => `router.all('/${m.replace('.ts', '')}', ${m.replace('.ts', '')})`).join('\n')
 
-const routesFile = `/* eslint-disable @typescript-eslint/ban-ts-comment */
+const routesFile = `// eslint-disable-next-line ts/ban-ts-comment
 // @ts-nocheck
 import { Router } from 'express'
 ${routesImports}

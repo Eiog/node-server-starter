@@ -1,5 +1,6 @@
 /* eslint-disable no-console */
 import { createServer } from 'node:http'
+import process from 'node:process'
 import express, { Router } from 'express'
 
 const PORT = process.env.PORT || 5631

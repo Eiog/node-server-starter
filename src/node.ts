@@ -1,5 +1,6 @@
 /* eslint-disable no-console */
 import { createServer } from 'node:http'
+import process from 'node:process'
 
 const PORT = process.env.PORT || 5630
 

@@ -3,7 +3,6 @@
   "extends": "@eiog/ts-config/tsconfig.json",
   "compilerOptions": {
     "baseUrl": ".",
-    "outDir": "dist",
     "module": "CommonJS",
     "paths": {
       "~/*": [
@@ -13,7 +12,8 @@
     "types": [
       "node",
       "vitest/globals"
-    ]
+    ],
+    "outDir": "dist"
   },
   "include": [
     "*.d.ts",
