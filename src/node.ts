@@ -2,7 +2,7 @@
 import { createServer } from 'node:http'
 import process from 'node:process'
 
-const PORT = process.env.PORT || 5630
+const PORT = Number(process.env.PORT) || 5630
 
 const server = createServer((req, res) => {
   res.writeHead(200, { 'Content-Type': 'text/plain' })

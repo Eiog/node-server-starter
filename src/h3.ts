@@ -4,7 +4,7 @@ import { createServer } from 'node:http'
 import process from 'node:process'
 import { createApp, createRouter, eventHandler, toNodeListener } from 'h3'
 
-const PORT = process.env.PORT || 5632
+const PORT = Number(process.env.PORT) || 5632
 
 const app = createApp()
 const server = createServer(toNodeListener(app))

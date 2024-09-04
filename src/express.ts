@@ -3,7 +3,7 @@ import { createServer } from 'node:http'
 import process from 'node:process'
 import express, { Router } from 'express'
 
-const PORT = process.env.PORT || 5631
+const PORT = Number(process.env.PORT) || 5631
 
 const app = express()
 app.use(express.json())
